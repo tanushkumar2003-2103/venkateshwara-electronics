@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="svGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B5ED7" />
+      <stop offset="100%" stop-color="#073B8C" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#0B5ED7" />
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Shield -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#svGrad)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  <!-- Circular Appliance Ring / Spark -->
+  <circle cx="32" cy="32" r="22" fill="none" stroke="url(#cyanGrad)" stroke-width="3" stroke-dasharray="80 30" opacity="0.9"/>
+  <circle cx="32" cy="32" r="14" fill="#0F172A" opacity="0.3"/>
+  <!-- Stylized VE Monogram for Venkateswara Electronics -->
+  <text x="32" y="38" font-family="'Manrope', -apple-system, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">VE</text>
+  <!-- Tech Accent Dot -->
+  <circle cx="45" cy="19" r="3.5" fill="#06B6D4" />
+</svg>

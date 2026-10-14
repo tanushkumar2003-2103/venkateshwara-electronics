@@ -1,0 +1,641 @@
+/* ==========================================================================
+   VENKATESWARA ELECTRONICS - RESPONSIVE STYLESHEET (ULTRA-PREMIUM)
+   Precision-engineered for:
+   - Ultra-compact phones (320px - 360px: iPhone SE 1st gen, Galaxy Fold)
+   - Standard modern smartphones (375px - 430px: iPhone 13/14/15/16, Galaxy S23/S24)
+   - Large mobile & phablets (480px - 600px)
+   - Tablets & iPads (768px - 820px: iPad Mini, iPad 10th Gen, iPad Air)
+   - Small laptops & iPad Pro (1024px - 1200px)
+   - Desktop & Ultrawide (1280px, 1440px, 1920px+)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LAPTOPS & SMALL DESKTOPS (<= 1200px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1200px) {
+  .hero-grid {
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 2.85rem;
+  }
+
+  .nav-menu {
+    gap: 20px;
+  }
+
+  .card-pos-2 {
+    right: -10px;
+  }
+
+  .concierge-card {
+    gap: 36px;
+    padding: 48px 36px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. TABLETS & SMALL LAPTOPS (<= 1024px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  /* Navigation: Collapse to mobile drawer */
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-actions .nav-phone-btn {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  /* Hero: Centered single-column layout */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 2.65rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-trust-row {
+    justify-content: center;
+  }
+
+  .hero-visual-wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Stats: 2x2 grid on tablets */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .why-us-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .problems-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 20px;
+  }
+
+  .timeline-line-desktop {
+    display: none;
+  }
+
+  .concierge-card {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLETS IN PORTRAIT & LARGE PHONES (<= 768px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  body {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .header-wrapper {
+    height: 70px;
+  }
+
+  .navbar-container {
+    padding: 0 16px;
+  }
+
+  .nav-cta-btn {
+    display: none;
+  }
+
+  .hero-section {
+    padding-top: calc(var(--nav-height) + 20px);
+    padding-bottom: 45px;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 26px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-phone-badge {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-trust-row {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  /* Floating Card: Pin inside the visual wrapper safely */
+  .card-pos-2 {
+    bottom: 16px;
+    right: 16px;
+    padding: 10px 14px;
+    max-width: calc(100% - 32px);
+  }
+
+  .floating-card-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .floating-card-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .floating-card-val {
+    font-size: 1rem;
+  }
+
+  .floating-card-lbl {
+    font-size: 0.6875rem;
+  }
+
+  .hero-image-card img {
+    height: 360px;
+  }
+
+  /* Stats Section */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .stat-card {
+    padding: 18px 12px;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  /* Services Section: Stack into single column */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .service-image-box {
+    height: 220px;
+  }
+
+  .service-content {
+    padding: 24px 20px;
+  }
+
+  .service-title {
+    font-size: 1.25rem;
+  }
+
+  /* Problems Section */
+  .problems-tabs-wrapper {
+    justify-content: flex-start;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .problems-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .problem-diagnostic-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 18px;
+  }
+
+  .diag-info {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .problem-diagnostic-box .btn {
+    width: 100%;
+  }
+
+  /* Why Choose Us */
+  .why-us-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .why-card {
+    padding: 28px 20px;
+  }
+
+  /* How It Works Vertical Timeline */
+  .timeline-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .timeline-grid::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    bottom: 25px;
+    left: 45px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--primary), var(--cyan));
+    opacity: 0.35;
+    z-index: 1;
+  }
+
+  .timeline-step {
+    flex-direction: row;
+    text-align: left;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .timeline-node {
+    margin-bottom: 0;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    z-index: 2;
+  }
+
+  .timeline-node-num {
+    font-size: 1.05rem;
+  }
+
+  .timeline-card {
+    flex-grow: 1;
+    padding: 20px 16px;
+  }
+
+  /* Location Section */
+  .location-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .location-content {
+    max-width: 100%;
+  }
+
+  .location-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .location-visual-card img {
+    height: 280px;
+  }
+
+  /* Reviews Section */
+  .trust-reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .trust-pillar-bar {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  /* Final CTA Concierge */
+  .concierge-card {
+    padding: 36px 20px;
+    text-align: center;
+    border-radius: var(--radius-lg);
+  }
+
+  .concierge-content h2 {
+    font-size: 1.85rem;
+  }
+
+  .concierge-assurances {
+    text-align: left;
+  }
+
+  .concierge-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .concierge-actions .btn {
+    width: 100%;
+  }
+
+  .quick-appliance-selector {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Footer */
+  .footer-trust-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  /* Mobile Contact Bar */
+  .mobile-bottom-bar {
+    display: block;
+  }
+
+  /* Floating WhatsApp Adjust for Mobile */
+  .floating-whatsapp-btn {
+    bottom: calc(78px + env(safe-area-inset-bottom, 0px));
+    right: 18px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .floating-whatsapp-btn svg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .wa-tooltip {
+    display: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. EXTRA SMALL & NARROW SCREENS (<= 480px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.22;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-badge {
+    padding: 5px 12px;
+    margin-bottom: 16px;
+  }
+
+  .hero-badge .badge-text {
+    font-size: 0.75rem;
+  }
+
+  /* Service Card: Category and Doorstep pills fit cleanly */
+  .service-category-pill {
+    top: 12px;
+    left: 12px;
+    padding: 5px 10px;
+    font-size: 0.72rem;
+  }
+
+  .service-doorstep-badge {
+    top: 12px;
+    right: 12px;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+
+  /* Service CTA row: Full width stacked buttons */
+  .service-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .service-wa-btn,
+  .service-call-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Diagnostic Box */
+  .problem-diagnostic-box {
+    padding: 20px 16px;
+  }
+
+  .diag-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .diag-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Concierge */
+  .concierge-card {
+    padding: 28px 16px;
+  }
+
+  .concierge-content h2 {
+    font-size: 1.65rem;
+  }
+
+  .request-action-btn {
+    padding: 12px 14px;
+    font-size: 0.875rem;
+  }
+
+  .appliance-chip-btn {
+    padding: 9px 8px;
+    font-size: 0.78rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. ULTRA-COMPACT MOBILE SCREENS (320px - 380px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 380px) {
+  /* Header & Logo */
+  .brand-title {
+    font-size: 1rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.65rem;
+  }
+
+  .brand-icon-wrapper {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-icon-wrapper svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Typography */
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.65rem;
+  }
+
+  /* Floating Card 2: Center below image to avoid cramping */
+  .floating-glass-card {
+    position: static;
+    margin: 12px auto 0;
+    width: 100%;
+    max-width: 290px;
+    justify-content: center;
+    padding: 10px 14px;
+  }
+
+  .card-pos-2 {
+    animation: none;
+  }
+
+  /* Stats */
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 16px;
+  }
+
+  .stat-number {
+    font-size: 1.55rem;
+  }
+
+  /* Service Card Badges */
+  .service-category-pill {
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    font-size: 0.68rem;
+  }
+
+  .service-doorstep-badge {
+    top: 8px;
+    right: 8px;
+    padding: 4px 8px;
+    font-size: 0.65rem;
+  }
+
+  .service-content {
+    padding: 20px 14px;
+  }
+
+  .service-title {
+    font-size: 1.15rem;
+  }
+
+  /* Concierge Appliance Selector */
+  .quick-appliance-selector {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer Support Card */
+  .footer-support-card {
+    padding: 16px 12px;
+  }
+
+  .footer-contact-row {
+    font-size: 0.8125rem;
+    gap: 8px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. HIGH CONTRAST & ACCESSIBILITY ENHANCEMENTS
+   -------------------------------------------------------------------------- */
+@media (prefers-contrast: high) {
+  .btn, .service-wa-btn, .hero-badge {
+    border-width: 2px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. REDUCED MOTION (ACCESSIBILITY)
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
